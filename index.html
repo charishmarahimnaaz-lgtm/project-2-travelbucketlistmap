@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Aura</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="logo">
+      ✈ Travel Aura
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#map">Map</a>
+      <a href="#footer">About</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Map Your Bucket-List Adventures</h1>
+
+      <p>
+        Explore beautiful destinations, save dream locations,
+        and visualize them on an interactive travel map.
+      </p>
+
+      <div class="search-container">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search destinations..."
+        >
+
+        <select id="categoryFilter">
+
+          <option value="all">All</option>
+          <option value="India">India</option>
+          <option value="Spiritual">Spiritual</option>
+          <option value="Beach">Beach</option>
+          <option value="International">International</option>
+          <option value="City">City</option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DESTINATIONS -->
+
+  <section id="destinations">
+
+    <div class="section-title">
+
+      <h2>Top Bucket List Destinations</h2>
+
+      <p>
+        Click any destination card to locate it on the map.
+      </p>
+
+    </div>
+
+    <div id="cardsContainer" class="cards-grid"></div>
+
+  </section>
+
+  <!-- MAP -->
+
+  <section id="map-section">
+
+    <div class="section-title">
+
+      <h2>Interactive Travel Map</h2>
+
+      <p>
+        View all destinations and zoom into your dream location.
+      </p>
+
+    </div>
+
+    <div id="map"></div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer id="footer">
+
+    <h3>Travel Aura</h3>
+
+    <p>
+      Designed for Travel Bucket List Mapping Project
+    </p>
+
+    <p>
+      Built using HTML, CSS, JavaScript, Node.js,
+      MongoDB Atlas and Leaflet Maps.
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
